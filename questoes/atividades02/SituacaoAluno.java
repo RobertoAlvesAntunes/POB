@@ -2,7 +2,7 @@ package questoes.atividades02;
 
 import java.util.Scanner;
 
-public class ParOuImpar {
+public class SituacaoAluno {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,12 +13,13 @@ public class ParOuImpar {
 
         double media = (nota1 + nota2) / 2;
 
-        
-        
-        if (numero % 2 ==0){
-            System.out.println("O número é par ");
-        } else {
-            System.out.println("O número é impar ");
+        if (media >= 7){
+            System.out.println("Aluno aprovado ");
+        } else if (media<=6.9&&media>=5){
+            System.out.println("Aluno em recuperação ");
+        }else
+        {
+             System.out.println("Aluno reprovado ");
         }
 
         sc.close();
