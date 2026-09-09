@@ -1,15 +1,11 @@
-package questoes.atividades06.q3;
+package questoes.atividades06.q3.controle;
 
-import java.util.Scanner;
+import questoes.atividades06.q3.domínio.ContaBancaria;
 
-public class Main {
+public class ControleContaBancaria {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        ContaBancaria conta = new ContaBancaria();
-
-        conta.titular = "João";
-        conta.numeroConta = "12345";
+        ContaBancaria conta = new ContaBancaria("João", "12345");
 
         conta.consultarSaldo();
 
@@ -26,6 +22,6 @@ public class Main {
 
         conta.sacar(-50);
 
-        sc.close();
+        conta.consultarSaldo();
     }
 }
