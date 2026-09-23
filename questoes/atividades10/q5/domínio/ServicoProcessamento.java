@@ -7,6 +7,7 @@ public class ServicoProcessamento {
     public void processarArquivo(String caminho) throws ProcessamentoDadosException {
 
         try {
+
             if (caminho == null || caminho.isEmpty()) {
                 throw new IOException("Caminho do arquivo inválido.");
             }
@@ -14,6 +15,7 @@ public class ServicoProcessamento {
             System.out.println("Arquivo processado com sucesso.");
 
         } catch (IOException e) {
+
             throw new ProcessamentoDadosException(
                     "Erro ao processar o arquivo.",
                     e

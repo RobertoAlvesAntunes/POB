@@ -10,9 +10,11 @@ public class ControleProcessamento {
         ServicoProcessamento servico = new ServicoProcessamento();
 
         try {
+
             servico.processarArquivo("");
 
         } catch (ProcessamentoDadosException e) {
+
             System.out.println("Erro: " + e.getMessage());
             System.out.println("Causa: " + e.getCause().getMessage());
         }
