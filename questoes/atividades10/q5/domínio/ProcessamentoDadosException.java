@@ -1,0 +1,8 @@
+package questoes.atividades10.q5.domínio;
+
+public class ProcessamentoDadosException extends Exception {
+
+    public ProcessamentoDadosException(String mensagem, Throwable causa) {
+        super(mensagem, causa);
+    }
+}
